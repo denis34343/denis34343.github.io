@@ -84,5 +84,14 @@
         <source src="Video/Video2.mp4" type="video/mp4">
       </video>
     <script src="vanilla-tilt.js"></script>
+    <script>
+      // Wait for window load
+      $(window).load(function() {
+          // Animate loader off screen
+          $("#loader").animate({
+              top: -200
+          }, 1500);
+      });
+  </script>   
 </body>
 </html>
