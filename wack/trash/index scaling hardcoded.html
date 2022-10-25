@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komino's Hub</title>
+    
+    <style>
+        html, body
+        {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        /*Alles vom header css*/
+        .Header-img {
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+        .ph-header {
+            height: 100px;
+        }
+        .Header-Links {
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 32px;
+            text-decoration: none;
+            position: fixed;
+            top: 35px;
+            left: 600px;
+            transition: all .2s ease-in-out;
+        }
+        .Header-Links:hover {
+            transform: scale(1.5);
+        }
+        .Header-Bilder {
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 32px;
+            text-decoration: none;
+            position: fixed;
+            top: 35px;
+            left: 800px;
+            transition: all .2s ease-in-out;
+        }
+        .Header-Bilder:hover {
+            transform: scale(1.5);
+        }
+        /*Alles unten*/
+        .container {
+            overflow: hidden;
+        }
+        .sliding-background {
+            background: url(Bilder/slideshow.png) repeat-y;
+            height: 6750px;
+            width: 1200px;
+            animation: slide 120s linear infinite;
+        }
+        @keyframes slide {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                transform: translate3d(0, -5400px, 0); /*the image height*/
+            }
+        }
+        .text-R {
+            display: block;
+            width: 635px;
+            word-wrap: break-word;
+            position: fixed;
+            top: 100px;
+            left: 1250px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 32px;
+        }
+    </style>
+
+<body> <!--Alles was mit dem header zu tun hat HTML-->
+    <div class="ph-header">fooheader</div>
+    
+    <img class="Header-img" src="Bilder/Header.png">
+
+    <a class="Header-Links" href="https://google.de">Links</a>
+
+    <a class="Header-Bilder" href="https://google.de">Bilder</a>
+
+</body>
+
+<body>
+    <div class="container">
+        <div class="sliding-background"></div>
+      </div>
+</body>
+<body>
+    <div class="text-R">
+        <p>Hallo!<br>
+            Ich bin Komino, 17 Jahre alt und zertifizierter degenerate. <br>
+            Ich bin sehr interessiert in VR, AI, Software Programmierung, Hardware, und 3D scanning!<br>
+            Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. Hier stehe sachen. 
+        </p>
+    </div>
+</body>
+</html>

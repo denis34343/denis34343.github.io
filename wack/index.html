@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komino's Hub</title>
+    
+    <style>
+        html, body
+        {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        /*Alles vom header css*/
+        .Header-img {
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+        
+ 
+        .Header-Links {
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: calc(100vw / 32);
+            text-decoration: none;
+            position: fixed;
+            top: calc(100vw / 80);
+            left: 45%;
+        
+        }
+        .Header-Links:hover {
+            transform: scale(1.5);
+            transition: all .2s ease-in-out;
+        }
+        .Header-Bilder {
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: calc(100vw / 32);
+            text-decoration: none;
+            position: fixed;
+            top: calc(100vw / 80);
+            left: 60%;
+        }
+        .Header-Bilder:hover {
+            transform: scale(1.5);
+            transition: all .2s ease-in-out;
+        }
+        /*Alles unten*/
+        @media screen and (min-width: 1000px) {
+        .container {
+            position: absolute;
+            margin-top: calc(100vw / 19.2 - 17.25px);
+            width: 60%;
+            overflow: hidden;
+            left: -300px;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+        .container {
+            position: absolute;
+            margin-top: calc(100vw / 19.2 - 17.25px);
+            width: 50%;
+            overflow: hidden;
+            left: -500%;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+        .container2 {
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            bottom: 0%;
+            height: 50%;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+        .container2 {
+            position: absolute;
+            margin-top: calc(100vw / 19.2 - 200px);
+            width: 100%;
+            overflow: hidden;
+            top: -500%;
+            }
+        }
+        .sliding-background {
+            background: url(Bilder/slideshow.png) repeat-y;
+            height: 6750px;
+            width: 1200px;
+            
+            animation: slide 120s linear infinite;
+        }
+        .sliding-background2 {
+            background: url(Bilder/slideshow2.png) repeat-x;
+            height: 500px;
+            width: 8890px;
+            
+            animation: slidee 120s linear infinite;
+        }
+        @keyframes slide {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                transform: translate3d(0, -5400px, 0); /*the image height*/
+            }
+        }
+        @keyframes slidee {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                transform: translate3d(-7112px, 0, 0); /*the image height*/
+            }
+        }
+        @media screen and (min-width: 1000px) {
+        .text-R {
+            display: block;
+            width: 52%;
+            max-height: 10vh;
+            word-wrap:normal;
+            position:  absolute;
+            top: calc(100vw / 19.2);
+            right: 2%;
+            font-family:monospace;
+            font-size: 32px;
+            font-size: 3vh
+            }
+        }
+        @media screen and (max-width: 1000px) {
+        .text-R {
+            display: block;
+            width: 98%;
+            max-height: 10vh;
+            word-wrap:normal;
+            position:  absolute;
+            top: calc(100vw / 19.2);
+            left: 1;
+            font-family:monospace;
+            font-size: 32px;
+            font-size: 2.5vh
+            }
+        }
+    </style>
+
+<body> <!--Alles was mit dem header zu tun hat HTML-->
+    <div class="ph-header">fooheader</div>
+    
+    <a href="index.html"><img class="Header-img" src="Bilder/Header.png"/></a>
+
+    <a class="Header-Links" href="links.html">Links</a>
+
+    <a class="Header-Bilder" href="bilder.html">Bilder</a>
+</body>
+
+<body>
+    <div class="container">
+        <div class="sliding-background"></div>
+      </div>
+</body>
+<body>
+    <div class="container2">
+        <div class="sliding-background2"></div>
+      </div>
+</body>
+<body>
+    <div class="text-R">
+        <p>Hallo!<br>
+            Ich bin Komino, aber heiße in echt Denis.<br>
+            Ich bin ein Virtual Reality Enthusiast und sehr interessiert in AI und 3D Scanning.<br>
+            Außerdem möchte ich Programmieren lernen. Deswegen habe ich diese Seite alleine gemacht!<br>
+            Auf dieser Seite werde ich meine Werke ausstellen.<br>
+            Bis jetzt beinhaltet das: AI generierte Bilder.<br>
+            In der Zukunft möchte ich diese Seite erweitern, um meine VrChat Welten, 3D gescannte Objekte und meine Werke rund um Programmieren auszustellen. Meine Links und Kontakte findest du alle unter "Links".
+        </p>
+    </div>
+</body>
+</html>
